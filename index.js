@@ -1,3 +1,4 @@
+// 1. Counting Sheep
 function countSheep(sheep) {
   if (sheep === 0) {
     console.log('All sheep jumped over the fence');
@@ -9,6 +10,7 @@ function countSheep(sheep) {
 
 // countSheep(4);
 
+// 2. Power Calculator
 powerCalculator = (base, exp) => {
   if (exp === 0) {
     return 1
@@ -22,6 +24,7 @@ powerCalculator = (base, exp) => {
 
 //console.log(powerCalculator(10, 2));
 
+// 3. Reverse String
 function reverse(string) {
   if (string === ''){
     return '';
@@ -32,7 +35,7 @@ function reverse(string) {
 }
 //console.log(reverse('reif'))
 
-
+// 4. nth Triangular Number
 tri = (n) => {
   if (n === 1) return 1
   else return n + tri(n -1);
@@ -40,6 +43,7 @@ tri = (n) => {
 
 //console.log(tri(6))
 
+// 5. String Splitter 
 function split(string, sep, i, arr=[]) {
   if (string[i] === sep){
     arr.push(string.slice(0, i))
@@ -54,6 +58,7 @@ function split(string, sep, i, arr=[]) {
 
 //console.log(split('02/20/2020/02/02/02', '/', 0));
 
+// 6. Fibonacci
 fib = (n) => {
   if(n < 1) return [0];
   if(n === 1) return [0,1];
@@ -65,6 +70,7 @@ fib = (n) => {
 }
 // console.log(fib(2))
 
+// 7. Factorial
 function factorial(n) {
   if (n===1){
     return 1
@@ -75,6 +81,7 @@ function factorial(n) {
 
 //console.log(factorial(5));
 
+// 8. Find a way out of the maze
 let mySmallMaze = [
     [' ', ' ', ' '],
     [' ', '*', ' '],
@@ -137,10 +144,13 @@ function outTwo(maze, x, y, arr, arr2){
     }
   }
 }
+// 9. Find ALL the ways out of the maze
+let nah = () => null
 
+// 10. Anagrams
+let ana = () => null
 
-
-
+// 11. Organization Chart
 let arr = [
   {id: 'Zuckerberg', parent: null},
   {id: 'Schroepfer', parent: 'Zuckerberg'},
@@ -203,8 +213,9 @@ let makeTreeIndent = (arr, parent, z) => {
     });
 }
 
-makeTreeIndent(arr, null, 0);
+//makeTreeIndent(arr, null, 0);
 
+// 12. Binary Representation
 function binary(num, str=''){
   if (num===1){
     str = '1' + str
